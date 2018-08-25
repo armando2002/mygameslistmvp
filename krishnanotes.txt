@@ -1,0 +1,56 @@
+Krishna Rokhale9:06 AM
+moment.js
+
+moment()
+
+.toJSON()
+
+.toString()
+
+confirm
+
+var answer = confirm("are you sure?")
+
+Krishna RokhaleKrishna Rokhale9:13 AM
+express generator
+
+Krishna RokhaleKrishna Rokhale9:31 AM
+/api
+
+apiRouter
+
+/api
+
+/games
+
+/api/games
+
+/games
+
+/ => /api
+
+/games/:platform
+
+req.params
+
+req.params.platform
+
+res.json(gamesJSON)
+
+Krishna RokhaleKrishna Rokhale9:36 AM
+$.get('/games/nintendo', function())
+
+var games = require('../games.json')
+
+games.my_games
+
+Krishna RokhaleKrishna Rokhale9:48 AM
+--save
+
+git init
+
+git remote add origin mygameslink
+
+git push origin master
+
+git push origin master --force
