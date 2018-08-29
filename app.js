@@ -7,7 +7,6 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api');
-// can add additional router for /api
 
 var app = express();
 
@@ -21,10 +20,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 // if URL  matches condition, run function. Line 22 takes precedence over Line 23
-app.use('/', indexRouter);
+// commenting this out for now so that I can load index.html
+//app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api', apiRouter);
-// could add /api router here
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -41,5 +40,13 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+// add function for login
+
+// add function for logout
+
+// add function for signup
+
 
 module.exports = app;
